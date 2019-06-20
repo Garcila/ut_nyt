@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>NYT</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">NYT STORIES</header>
+      <div class="section">
+        <header class="secondary-header">Search Articles</header>
+        <form id="form-nyt">
+          <input
+            type="text"
+            id="search-term"
+            placeholder="Search Term"
+            name="search-term"
+          />
+          <input
+            type="text"
+            id="records"
+            placeholder="Number of Records to Retreive"
+            name="records"
+          />
+          <input
+            type="text"
+            id="start-year"
+            placeholder="Start Year (Optional)"
+            name="records"
+          />
+          <input type="text" id="end-year" placeholder="End Year (Optional)" />
+          <div class="buttons">
+            <button id="search" type="submit">Search</button>
+            <button id="clear">Clear</button>
+          </div>
+        </form>
+      </div>
+      <div class="section">
+        <header class="secondary-header">Top Articles</header>
+        <ul id="article-list"></ul>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./assets/js/scripts.js"></script>
+  </body>
+</html>
